@@ -1,8 +1,14 @@
-# React + Vite
+# About
+This is a **work in progress** version of the game Snake, written in React. I am using this as an excuse to practice some more advanced features in React, while building something fun!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Built In
+- React
 
-Currently, two official plugins are available:
+# Getting started
+Right now this project is very much a WIP!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+However, if you'd like to work on this yourself, you can install dependencies and run a local server with:
+```
+npm install
+npm run dev
+```
