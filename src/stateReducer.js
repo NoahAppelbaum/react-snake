@@ -1,6 +1,16 @@
-export default function stateReducer(game, action) {
+export default function stateReducer({board, snake}, action) {
 
+  const head = snake[0];
+  let tail = snake[snake.length - 1];
+  let direction = head.direction;
 
+  if (action.type === "MOVE") {
+    board[tail.y][tail.x] = 0;
+
+    if(direction === "D") {
+
+    }
+  }
 
 }
 
@@ -19,4 +29,11 @@ When snake moves, ONLY NEED TO:
 
   (different when snake eats)
 
+
+  DO I NEED THE SNAKE ARRAY???
+
+  Can I just track the head, add 1's to matrix on eat, and remove them on move?
+       -Just initialize tail as head, and every time on eat, tail becomes the last link
+
+       ...but logic is just spatial, in the matrix. Don't have to track coordinates???!
 */
