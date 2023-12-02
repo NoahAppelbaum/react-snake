@@ -19,7 +19,8 @@ export default function stateReducer({board, snake}, action) {
 game:
   {
     board -- matrix, 0's are empty spaces, 1's are snake parts
-    snake -- [{x,y,direction}, {x,y}, ...]
+    head -- {x,y,direction}
+    tail --
   }
 
 When snake moves, ONLY NEED TO:
@@ -32,8 +33,12 @@ When snake moves, ONLY NEED TO:
 
   DO I NEED THE SNAKE ARRAY???
 
-  Can I just track the head, add 1's to matrix on eat, and remove them on move?
+  Can I just track the head, LEAVE 1's on matrix on eat, and remove them on move?
        -Just initialize tail as head, and every time on eat, tail becomes the last link
 
        ...but logic is just spatial, in the matrix. Don't have to track coordinates???!
+
+  On eat, leave last piece instead of getting rid of it?
+
+  so, track head and tail. Noice!
 */
