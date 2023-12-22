@@ -8,8 +8,7 @@ function Game({gameHeight = 101, gameWidth = 101}) {
         createInitialState
     );
 
-
-    //Make some listeners for keystrokes
+    //TODO: Make some listeners for keystrokes
     //  -On window? In a component? huh?
     //  - Then, call dispatch with the appropriate `direction` property on `action`
 }
