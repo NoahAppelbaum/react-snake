@@ -73,6 +73,9 @@ function stateReducer({board, snake}, action) {
     snake[0] = destination;
     board[destination[0]][destination[1]] = "S"
   }
+
+  //BIG OLE' RETURN??
+  return {board, snake};
 }
 
 function createInitialState([height, width]) {
